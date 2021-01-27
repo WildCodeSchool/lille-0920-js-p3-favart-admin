@@ -1,5 +1,5 @@
 import React from "react";
-import { Admin, Resource, List } from "react-admin";
+import { Admin, Resource } from "react-admin";
 import dataProvider from "./dataProvider";
 import ProjetsCreate from "./components/ProjetsCreate";
 import ProjetsEdit from "./components/ProjetsEdit";
