@@ -5,8 +5,6 @@ const apiUrl = "http://localhost:5050";
 const httpClient = fetchUtils.fetchJson;
 
 export default {
-
-  
   getList: (resource, params) => {
     const url = `${apiUrl}/${resource}`;
 
