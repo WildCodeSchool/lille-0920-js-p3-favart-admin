@@ -4,6 +4,9 @@ import dataProvider from "./dataProvider";
 import ProjetsCreate from "./components/ProjetsCreate";
 import ProjetsEdit from "./components/ProjetsEdit";
 import ProjetsList from "./components/ProjetsList";
+import LogosCreate from "./components/LogosCreate";
+import LogosEdit from "./components/LogosEdit";
+import LogosList from "./components/LogosList";
 
 function App() {
   return (
@@ -13,6 +16,12 @@ function App() {
         list={ProjetsList}
         edit={ProjetsEdit}
         create={ProjetsCreate}
+      />
+      <Resource
+        name="logos"
+        list={LogosList}
+        edit={LogosEdit}
+        create={LogosCreate}
       />
     </Admin>
   );
