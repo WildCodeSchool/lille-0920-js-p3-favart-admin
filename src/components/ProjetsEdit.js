@@ -3,7 +3,7 @@ import { Edit, SimpleForm, TextInput } from "react-admin";
 
 const ProjetsEdit = (props) => {
   return (
-    <Edit title="Changez votre project" {...props}>
+    <Edit title="Modifiez votre project" {...props}>
       <SimpleForm>
         <TextInput disabled source="id" />
         <TextInput source="logo" />
