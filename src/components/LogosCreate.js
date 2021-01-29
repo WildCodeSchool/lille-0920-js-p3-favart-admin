@@ -5,7 +5,9 @@ const LogosCreate = (props) => {
   return (
     <Create title="Ajoutez un logo" {...props}>
       <SimpleForm>
-        <TextInput source="Logo" />
+      <TextInput source="titre" />
+
+        <TextInput source="lien_url" />
 
       </SimpleForm>
     </Create>

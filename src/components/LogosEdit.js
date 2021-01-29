@@ -5,8 +5,10 @@ const LogosEdit = (props) => {
   return (
     <Edit title="Modifiez votre liste de logos" {...props}>
       <SimpleForm>
-        <TextInput disabled source="idLogos" />
-        <TextInput source="Logos" />
+        <TextInput disabled source="id" />
+        <TextInput source="titre" />
+
+        <TextInput source="lien_url" />
 
       </SimpleForm>
     </Edit>

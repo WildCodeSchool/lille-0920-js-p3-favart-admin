@@ -12,7 +12,8 @@ const LogosList = (props) => {
     <List {...props}>
       <Datagrid>
         <TextField source="id" />
-        <TextField source="logos" />
+        <TextField source="titre" />
+        <TextField source="lien_url" />
         <EditButton basePath="/logos" />
         <DeleteButton basePath="/logos" />
       </Datagrid>
