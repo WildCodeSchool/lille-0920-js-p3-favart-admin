@@ -9,7 +9,6 @@ const LogosEdit = (props) => {
         <TextInput source="titre" />
 
         <TextInput source="lien_url" />
-
       </SimpleForm>
     </Edit>
   );
