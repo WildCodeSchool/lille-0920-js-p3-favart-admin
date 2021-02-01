@@ -14,7 +14,7 @@ export default {
     }));
   },
 
-  getOne: (resource, params) =>
+      getOne: (resource, params) =>
     httpClient(`${apiUrl}/${resource}/${params.id}`).then(({ json }) => ({
       data: { ...params.data, id: { json }.id },
     })),
@@ -23,7 +23,7 @@ export default {
     httpClient(`${apiUrl}/${resource}/${params.id}`, {
       method: "PUT",
       body: JSON.stringify(params.data),
-    }).then(({ json }) => ({ data: json })),
+    }).then(({ json }) => ({ data: {...params.data},id: { json }.id })),
 
   updateMany: (resource, params) => {
     const query = {
@@ -32,7 +32,7 @@ export default {
     return httpClient(`${apiUrl}/${resource}?${stringify(query)}`, {
       method: "PUT",
       body: JSON.stringify(params.data),
-    }).then(({ json }) => ({ data: json }));
+    }).then(({ json }) => ({ data: {...params.data},id: { json }.id }));
   },
 
   create: (resource, params) =>
@@ -46,7 +46,7 @@ export default {
   delete: (resource, params) =>
     httpClient(`${apiUrl}/${resource}/${params.id}`, {
       method: "DELETE",
-    }).then(({ json }) => ({ data: json })),
+    }).then(({ json }) => ({ data: {...params.data},id: { json }.id })),
 
   deleteMany: (resource, params) => {
     const query = {
@@ -55,6 +55,6 @@ export default {
     return httpClient(`${apiUrl}/${resource}?${stringify(query)}`, {
       method: "DELETE",
       body: JSON.stringify(params.data),
-    }).then(({ json }) => ({ data: json }));
+    }).then(({ json }) => ({ data: {...params.data}, id: { json }.id }));
   },
 };
