@@ -9,6 +9,7 @@
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
+    "jwt-decode": "^3.1.2",
     "proxy": "^1.0.2",
     "ra-data-simple-rest": "^3.10.4",
     "react": "^17.0.1",

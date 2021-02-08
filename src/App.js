@@ -7,10 +7,12 @@ import ProjetsList from "./components/ProjetsList";
 import LogosCreate from "./components/LogosCreate";
 import LogosEdit from "./components/LogosEdit";
 import LogosList from "./components/LogosList";
+import authProvider from "./authProvider";
+
 
 function App() {
   return (
-    <Admin dataProvider={dataProvider}>
+    <Admin dataProvider={dataProvider} authProvider={authProvider}>
       <Resource
         name="projets"
         list={ProjetsList}
