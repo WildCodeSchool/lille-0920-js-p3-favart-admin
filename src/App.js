@@ -9,12 +9,7 @@ import LogosEdit from "./components/LogosEdit";
 import LogosList from "./components/LogosList";
 import authProvider from "./authProvider";
 
-
-
-
-
 function App() {
-
   return (
     <Admin dataProvider={dataProvider} authProvider={authProvider}>
       <Resource
